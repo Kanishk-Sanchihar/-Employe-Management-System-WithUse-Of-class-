@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="employe_manag.master.cs" Inherits="employe_manag" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border-style: solid;
+            border-width: 1px;
+        }
+        .auto-style2 {
+            font-size: xx-large;
+            color: #000066;
+        }
+    </style>
+</head>
+<body>
+    <p style="text-align: center; font-weight: 700" class="auto-style2">
+        EMPLOYEE MANAGEMENT SYSTEM</p>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Home</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">New Employee</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Search</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">All Employee</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Edit</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">Logout</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
